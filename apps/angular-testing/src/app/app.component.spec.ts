@@ -6,7 +6,7 @@ import { AlbumService } from './album.service';
 import { of } from 'rxjs';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-it('should search on username', async () => {
+it('should be able to load albums', async () => {
   const albums: Album[] = [
     {
       userId: 1,
