@@ -50,14 +50,17 @@
     "@angular/language-service": "^9.1.0",
     "@nrwl/jest": "9.4.5",
     "@nrwl/workspace": "9.4.5",
+    "@pact-foundation/pact": "^9.11.0",
     "@testing-library/angular": "^9.5.0",
     "@testing-library/cypress": "^6.0.0",
     "@types/jest": "25.1.4",
     "@types/node": "~8.9.4",
+    "axios": "^0.19.2",
     "codelyzer": "~5.0.1",
     "dotenv": "6.2.0",
     "eslint": "6.8.0",
     "jest": "25.2.3",
+    "jest-pact": "^0.5.4",
     "jest-preset-angular": "8.1.2",
     "msw": "^0.19.5",
     "prettier": "2.0.4",
@@ -65,5 +68,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
     "typescript": "~3.8.3"
+  },
+  "config": {
+    "pact_do_not_track": true
   }
 }
