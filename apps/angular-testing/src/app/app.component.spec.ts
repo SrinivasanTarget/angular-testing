@@ -1,6 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { render, screen, userEvent, fireEvent } from '@testing-library/angular';
+import { render, screen, fireEvent } from '@testing-library/angular';
 import { AppComponent, Album } from './app.component';
 import { AlbumService } from './album.service';
 import { of } from 'rxjs';
@@ -16,7 +14,6 @@ it('should be able to load albums', async () => {
   ];
 
   await render(AppComponent, {
-    imports: [HttpClientModule, ReactiveFormsModule],
     componentProviders: [
       {
         provide: AlbumService,
