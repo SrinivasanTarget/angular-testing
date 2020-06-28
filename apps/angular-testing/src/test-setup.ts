@@ -1,6 +1,7 @@
 import 'jest-preset-angular';
-import { server } from './mocks/node';
+// import { server } from './mocks/node';
 
-beforeAll(() => server.listen());
-afterEach(() => server.resetHandlers());
-afterAll(() => server.close());
+// beforeAll(() => server.listen());
+// afterEach(() => server.resetHandlers());
+// afterAll(() => server.close());
+jest.setTimeout(8000);
