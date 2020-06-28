@@ -1,13 +1,11 @@
-import { getGreeting } from '../support/app.po';
+import { getAlbums } from '../support/app.po';
 
 describe('angular-testing', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+  it('should be able to load albums', () => {
+    cy.findByRole('button', { name: /get albums/i }).click();
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to angular-testing!');
+    getAlbums().should('exist');
   });
 });

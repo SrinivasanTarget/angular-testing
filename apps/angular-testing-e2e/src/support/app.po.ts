@@ -1,1 +1,1 @@
-export const getGreeting = () => cy.get('h1');
+export const getAlbums = () => cy.findByRole('option', { name: /quidem molestiae enim/i });
