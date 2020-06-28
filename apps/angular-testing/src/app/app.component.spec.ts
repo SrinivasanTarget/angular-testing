@@ -30,8 +30,10 @@ test('should be able to load albums', async () => {
 
   fireEvent.click(screen.getByRole('button', { name: /get albums/i }));
 
-  await screen.findByText(/sarah/i);
+  const album = await screen.findByText(/sarah/i);
+  expect(album).toBeInTheDocument();
 
+  // Accessibility checks
   const results = await axe(container)
 
   expect(results).toHaveNoViolations()
