@@ -1,8 +1,5 @@
 export const createMockHandlers = (rest) => [
-  rest.get('https://api.github.com/users/:user', (req, res, ctx) => {
-    // Access request's params
-    const { user } = req.params;
-
+  rest.get('https://jsonplaceholder.typicode.com/albums', (req, res, ctx) => {
     return res(
       // Set custom status
       ctx.status(200),
@@ -12,8 +9,9 @@ export const createMockHandlers = (rest) => [
 
       // send JSON response body
       ctx.json({
-        name: `mocked-${user}`,
-        bio: 'mocked-bio',
+        userId: 1,
+        id: 1,
+        title: 'tamil',
       })
     );
   }),
