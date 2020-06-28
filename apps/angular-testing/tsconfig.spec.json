@@ -3,7 +3,14 @@
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
     "module": "commonjs",
-    "types": ["jest", "node", "cypress", "@types/testing-library__cypress"]
+    "types": [
+      "jest",
+      "node",
+      "cypress",
+      "@types/testing-library__cypress",
+      "@types/jest-axe",
+      "jest-axe"
+    ]
   },
   "files": ["src/test-setup.ts"],
   "include": ["**/*.spec.ts", "**/*.d.ts"]

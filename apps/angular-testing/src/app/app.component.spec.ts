@@ -3,7 +3,8 @@ import { AppComponent, Album } from './app.component';
 import { AlbumService } from './album.service';
 import { of } from 'rxjs';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { axe, toHaveNoViolations } from 'jest-axe';
+expect.extend(toHaveNoViolations);
 test('should be able to load albums', async () => {
   const albums: Album[] = [
     {
@@ -13,7 +14,7 @@ test('should be able to load albums', async () => {
     }
   ];
 
-  await render(AppComponent, {
+  const { container } = await render(AppComponent, {
     componentProviders: [
       {
         provide: AlbumService,
@@ -30,4 +31,8 @@ test('should be able to load albums', async () => {
   fireEvent.click(screen.getByRole('button', { name: /get albums/i }));
 
   await screen.findByText(/sarah/i);
+
+  const results = await axe(container)
+
+  expect(results).toHaveNoViolations()
 });
