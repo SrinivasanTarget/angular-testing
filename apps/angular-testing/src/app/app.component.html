@@ -1,14 +1,19 @@
 <section>
-  <h1 class="example-label">Sample Application</h1>
+  <h1 class="example-label md-display-3">Sample Application</h1>
   <div class="example-button-row center">
-    <button (click)="getAllAlbums()" mat-raised-button color="primary">
+    <button
+      (click)="getAllAlbums()"
+      class="md-raised"
+      mat-raised-button
+      color="primary"
+    >
       Get Albums
     </button>
   </div>
 </section>
 
 <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
-  <mat-chip *ngFor="let album of availableAlbums">
+  <mat-chip class="md-body-2" *ngFor="let album of availableAlbums">
     {{ album.title }}
   </mat-chip>
 </mat-chip-list>
