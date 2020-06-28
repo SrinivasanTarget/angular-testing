@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlbumService } from './album.service';
 
 @Component({
   selector: 'angular-testing-root',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-testing';
+  constructor(private service: AlbumService) { }
+  availableAlbums: Album[];
+  show = false;
+
+  getAllAlbums() {
+    this.service.getAlbums().subscribe((result) => {
+      this.availableAlbums = result;
+      this.show = true;
+    });
+  }
+}
+
+export interface Album {
+  userId: number;
+  id: number;
+  title: string;
 }

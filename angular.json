@@ -21,7 +21,10 @@
               "apps/angular-testing/src/favicon.ico",
               "apps/angular-testing/src/assets"
             ],
-            "styles": ["apps/angular-testing/src/styles.css"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "apps/angular-testing/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -79,7 +82,10 @@
               "apps/angular-testing/tsconfig.app.json",
               "apps/angular-testing/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/angular-testing/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/angular-testing/**/*"
+            ]
           }
         },
         "test": {
@@ -114,8 +120,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/angular-testing-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/angular-testing-e2e/**/*"]
+            "tsConfig": [
+              "apps/angular-testing-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/angular-testing-e2e/**/*"
+            ]
           }
         }
       }
