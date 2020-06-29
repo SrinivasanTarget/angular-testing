@@ -2,6 +2,14 @@
 
 The goal of this repository is to have a collection of common testing scenarios with Angular and to demonstrate different testing layers in [Testing Pyramid](https://martinfowler.com/articles/microservice-testing/#conclusion-test-pyramid) or [Testing Trophy](https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests) with Angular. I'm happy for every contribution/suggestion 😃.
 
+## Different Layers of Tests
+
+* Unit/Integration Tests - using [Angular Testing Library](https://testing-library.com/docs/angular-testing-library/intro).
+* Accessibility Testing on Angular components - using [Jest-Axe](https://github.com/nickcolley/jest-axe).
+* Consumer Driven Contract Tests - using [Pact](https://docs.pact.io/).
+* End to End Tests - using [Cypress](https://www.cypress.io).
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
