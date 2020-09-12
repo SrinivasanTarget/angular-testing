@@ -63,7 +63,7 @@
     "eslint": "6.8.0",
     "jest": "25.2.3",
     "jest-axe": "^4.0.0",
-    "jest-pact": "^0.5.4",
+    "jest-pact": "^0.8.1",
     "jest-preset-angular": "8.2.0",
     "msw": "^0.19.5",
     "prettier": "2.1.1",
