@@ -50,7 +50,7 @@
     "@angular/language-service": "^10.1.1",
     "@nrwl/jest": "9.4.5",
     "@nrwl/workspace": "9.4.5",
-    "@pact-foundation/pact": "^9.11.1",
+    "@pact-foundation/pact": "^9.17.2",
     "@testing-library/angular": "^9.5.0",
     "@testing-library/cypress": "^7.0.4",
     "@testing-library/jest-dom": "^5.11.9",
