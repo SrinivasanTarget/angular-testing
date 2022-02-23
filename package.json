@@ -54,7 +54,7 @@
     "@testing-library/angular": "^9.5.0",
     "@testing-library/cypress": "^7.0.4",
     "@testing-library/jest-dom": "^5.11.9",
-    "@types/jest": "26.0.13",
+    "@types/jest": "27.4.1",
     "@types/jest-axe": "^3.5.0",
     "@types/node": "~14.14.25",
     "axios": "^0.21.1",
