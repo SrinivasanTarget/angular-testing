@@ -59,7 +59,7 @@
     "@types/node": "~14.14.25",
     "axios": "^0.21.1",
     "codelyzer": "~6.0.0",
-    "dotenv": "6.2.0",
+    "dotenv": "16.0.3",
     "eslint": "7.21.0",
     "jest": "25.5.4",
     "jest-axe": "^4.0.0",
